@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
 void main() {
-  runApp(FirstProject());
+  runApp(const FirstProject());
 }
 
 class FirstProject extends StatelessWidget {
-  FirstProject();
+  const FirstProject({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            backgroundColor: Color(0xFFD2BCD5),
+            backgroundColor: const Color(0xFFD2BCD5),
             body: Center(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
